@@ -7,9 +7,9 @@
     "sourceFiles-windows-x86": ["bin/duktape32.obj"],
     "sourceFiles-windows-x86_64": ["bin/duktape.obj"],
 
-    "preBuildCommands-linux": ["make -C $PACKAGE_DIR/c"],
-	"lflags-linux": ["-L$PACKAGE_DIR/c"],
-	"libs-linux": ["duktape"],
+    "preBuildCommands-": ["make -C $PACKAGE_DIR/c"],
+	"lflags-posix": ["-L$PACKAGE_DIR/c"],
+	"libs-posix": ["duktape"],
 
     "subPackages": [
         "examples/module",
