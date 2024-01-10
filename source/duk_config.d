@@ -904,7 +904,7 @@ enum DUK_UCODEPOINT_MAX = DUK_UINT_MAX;
 
 alias DUK_ABORT = abort;
 
-version(Posix) {
+version(linux) {
 
 alias DUK_JMPBUF_TYPE = jmp_buf;
 alias DUK_SETJMP = setjmp;
